@@ -1,0 +1,10 @@
+# pycharm
+.idea
+
+# python3 virtual environment
+/nba-predict
+
+
+# python related files
+.pytest_cache
+*.pyc
