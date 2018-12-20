@@ -43,5 +43,5 @@ A repository dedicated to finding and executing high percentage bets on sporting
     ```
     :$    pytest
     ```
-    
 
+* If test or lint errors arised, then fix the errors that are given
