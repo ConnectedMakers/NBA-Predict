@@ -3,6 +3,11 @@
 # NBA-Predict
 A repository dedicated to finding and executing high percentage bets on sporting events.
 
+We are utilizing these sites for our data.
+https://stats.nba.com/
+
+http://data.nba.net/10s/prod/v1/today.json
+
 
 ## Prerequisites 
 ```
@@ -29,6 +34,15 @@ A repository dedicated to finding and executing high percentage bets on sporting
 
     :$   pip freeze > requirements.txt
    
+Setup the google drive api
+* Look at these resources for reference
+    * https://gspread.readthedocs.io/en/latest/oauth2.html)
+    * https://github.com/burnash/gspread
+    * https://console.developers.google.com/
+
+Save the json credentials that you will get from Google api dashboard in the project root directory like this `/NBA-Predict/client_secret.json`
+* Also do not commit client_secret.json to this repo ;) 
+
   
 
 ## Requirements 

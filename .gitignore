@@ -9,3 +9,6 @@
 # python related files
 .pytest_cache
 *.pyc
+
+# files that should not be committed
+client_secret.json
