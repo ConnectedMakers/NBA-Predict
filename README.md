@@ -59,3 +59,11 @@ Save the json credentials that you will get from Google api dashboard in the pro
     ```
 
 * If test or lint errors arised, then fix the errors that are given
+
+
+## Getting Started 
+
+Make sure to create a python3 virtual env. If you don't know how then refer to the prerequisites section 
+the readme
+
+Run `python src/app.py ` to invoke the main program and see results in google sheets 
