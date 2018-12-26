@@ -51,7 +51,7 @@ Save the json credentials that you will get from Google api dashboard in the pro
 
     * Runs a python linter for source and tests
     ```
-     :$   flake8 /src /test 
+     :$   flake8 --ignore=E402 src/ test/
     ```
     * Runs unit tests
     ```
