@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/ConnectedMakers/NBA-Predict.svg?branch=master)](https://travis-ci.org/ConnectedMakers/NBA-Predict)
+[![Build Status](https://travis-ci.org/ConnectedMakers/nba-predict.svg?branch=master)](https://travis-ci.org/ConnectedMakers/NBA-Predict)
 
 # NBA-Predict
 A repository dedicated to finding and executing high percentage bets on sporting events.
