@@ -3,14 +3,15 @@ import requests
 import json
 import sys
 import os
+
 myPath = os.path.dirname(os.path.abspath(__file__))
-sys.path.insert(0, myPath + '/../')
+sys.path.insert(0, myPath + "/../")
 from src.team import Team
 from src.game import Game
 
 
 def get_current_date():
-    return datetime.today().strftime('%Y%m%d')
+    return datetime.today().strftime("%Y%m%d")
 
 
 def get_vistor_team_info(game_payload):
@@ -23,11 +24,11 @@ def get_home_team_info(game_payload):
 
 def get_team_info(game_payload, teamSide):
     team_payload = game_payload[teamSide]
-    tri_code = team_payload['triCode']
-    team_id = team_payload['teamId']
-    wins = team_payload['win']
-    losses = team_payload['loss']
-    linescore = team_payload['linescore']
+    tri_code = team_payload["triCode"]
+    team_id = team_payload["teamId"]
+    wins = team_payload["win"]
+    losses = team_payload["loss"]
+    linescore = team_payload["linescore"]
     return Team(tri_code, team_id, wins, losses, linescore)
 
 
@@ -37,7 +38,7 @@ url = "http://data.nba.net/10s/prod/v1/{}/scoreboard.json".format(date)
 scoreboard_payload = requests.get(url)
 scoreboard_json = json.loads(scoreboard_payload.text)
 
-games = scoreboard_json['games']
+games = scoreboard_json["games"]
 
 game = games[0]
 game_id = game["gameId"]

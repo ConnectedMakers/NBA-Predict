@@ -1,9 +1,11 @@
 import gspread
 from oauth2client.service_account import ServiceAccountCredentials
 
-file = './client_secret.json'
-scope = ['https://spreadsheets.google.com/feeds',
-         'https://www.googleapis.com/auth/drive']
+file = "./client_secret.json"
+scope = [
+    "https://spreadsheets.google.com/feeds",
+    "https://www.googleapis.com/auth/drive",
+]
 
 credentials = ServiceAccountCredentials.from_json_keyfile_name(file, scope)
 

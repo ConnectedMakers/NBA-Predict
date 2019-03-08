@@ -11,7 +11,7 @@ class TestGame(unittest.TestCase):
         v_team = Team("Raptors", "1", 70, 2, [22, 22, 22, 22])
         h_team = Team("Spurs", "2", 72, 0, [25, 25, 25, 25])
         game = Game("1234", v_team, h_team, 15179)
-        self.assertEqual(game.game_id, '1234')
+        self.assertEqual(game.game_id, "1234")
         self.assertEqual(game.visitor_team.name, "Raptors")
         self.assertEqual(game.home_team.name, "Spurs")
         self.assertEqual(game.home_team.line_scores, [25, 25, 25, 25])
